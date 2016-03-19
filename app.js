@@ -20,7 +20,7 @@ app.use(CookieParser());
 app.use(Session({
   secret: secret,
   resave: false,
-  saveuninitialized: false
+  saveUninitialized: false
 }));
 app.use(PostData);
 app.use(RouteHandler);
