@@ -1,0 +1,27 @@
+{
+  "name": "spot",
+  "version": "0.0.1",
+  "description": "Spontaneously Awesome",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staticinteger/spot.git"
+  },
+  "keywords": [
+    "rave",
+    "spontaneous",
+    "music",
+    "flash",
+    "crowd",
+    "source"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/staticinteger/spot/issues"
+  },
+  "homepage": "https://github.com/staticinteger/spot#readme"
+}
