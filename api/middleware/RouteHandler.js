@@ -1,5 +1,5 @@
 // Path of our web root
-var www = __dirname + "/.tmp/";
+var www = global.base + "/.tmp/";
 
 // Checks if path is that of an endpoint.
 var isEndpoint = function (path) {
@@ -34,7 +34,11 @@ module.exports = function (req, res, next) {
     next();
 
   } else {
-    res.sendFile("app.html", { root: www });
+    try {
+      res.sendFile("app.html", { root: www });
+    } catch (e) {
+      res.status(404).end();
+    }
 
   }
 };

@@ -17,6 +17,7 @@ var paths = {
     images: ['assets/images/**/*'],
     templates: ['assets/templates/**/*'],
     copy: [
+      'assets/app.html',
       'assets/favicon.ico',
       'assets/robots.txt'
     ]
