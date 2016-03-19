@@ -1,5 +1,5 @@
-app.controller('globalCtrl', ['$scope', function ($scope) {
+app.controller('GlobalCtrl', ['$scope', function ($scope) {
     $scope.test = function () {
-      console.log('This shizz works ;)');  
+      console.log('This shizz works ;)');
     };
 }]);
