@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-
-=======
 var express = require("express"),
     app     = express(),
     // Custom Middleware
@@ -22,4 +19,3 @@ app.use(RouteHandler);
 app.listen(7000, function () {
   console.log("Started server: http://localhost:7000");
 });
->>>>>>> 5b938674c946cc10e02345d16f5eb3c8721c7975
