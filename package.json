@@ -34,5 +34,8 @@
     "gulp-uglify": "^1.5.3",
     "sails-mongo": "^0.12.0",
     "waterline": "^0.12.1"
+  },
+  "devDependencies": {
+    "cordova": "^6.0.0"
   }
 }
