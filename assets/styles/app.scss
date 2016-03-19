@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import "vendor/angular/angular-material";
 @import "vendor/angular/angular-material.layouts";

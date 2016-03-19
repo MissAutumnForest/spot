@@ -2,8 +2,8 @@ var app = angular.module('spot', ['ngRoute', 'ngMaterial']);
 
 app.config(["$mdThemingProvider", function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
-    .primaryPalette('green')
-    .accentPalette('blue');
+    .primaryPalette('blue')
+    .accentPalette('green');
 }]);
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
