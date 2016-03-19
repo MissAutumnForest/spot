@@ -25,8 +25,13 @@
   },
   "homepage": "https://github.com/staticinteger/spot#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.1",
     "express": "^4.13.4",
     "express-session": "^1.13.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3",
     "sails-mongo": "^0.12.0",
     "waterline": "^0.12.1"
   }
