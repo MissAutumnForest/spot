@@ -14,8 +14,8 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
 
   $routeProvider
   .when('/', {
-    templateUrl: "/templates/pages/login.html",
-    controller: "LoginCtrl"
+    templateUrl: "/templates/pages/splash.html",
+    controller: "SplashCtrl"
   })
   .otherwise({
     redirectTo: '/'
