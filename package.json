@@ -4,7 +4,7 @@
   "description": "Spontaneously Awesome",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "nodemon": "nodemon app.js -w api -w config -w app.js"
   },
   "repository": {
     "type": "git",
