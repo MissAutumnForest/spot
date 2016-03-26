@@ -3,3 +3,7 @@ app.controller('GlobalCtrl', ['$scope', '$mdSidenav', function ($scope, $mdSiden
     $mdSidenav("left").toggle();
   };
 }]);
+
+
+
+

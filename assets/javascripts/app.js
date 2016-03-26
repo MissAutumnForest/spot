@@ -1,9 +1,9 @@
 var app = angular.module('spot', ['ngRoute', 'ngMaterial']);
 
-app.config(["$mdThemingProvider", function($mdThemingProvider) {
+app.config(["$mdThemingProvider", function ($mdThemingProvider) {
   $mdThemingProvider.theme('default')
-    .primaryPalette('blue')
-    .accentPalette('green');
+      .primaryPalette('blue')
+      .accentPalette('green');
 }]);
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
@@ -13,15 +13,22 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
   });
 
   $routeProvider
-  .when('/', {
-    templateUrl: "/templates/pages/splash.html",
-    controller: "SplashCtrl"
-  })
-  .when('/login', {
-    templateUrl: "/templates/pages/login.html",
-    controller: "LoginCtrl"
-  })
-  .otherwise({
-    redirectTo: '/'
-  });
+      .when('/', {
+        templateUrl: "/templates/pages/splash.html",
+        controller: "SplashCtrl"
+      })
+      .when('/login', {
+        templateUrl: "/templates/pages/login.html",
+        controller: "LoginCtrl"
+      })
+      .when('/signup', {
+          templateUrl: "/templates/pages/signup.html",
+          controller: "SignUpCtrl"
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
 }]);
+
+
+

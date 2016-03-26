@@ -1,0 +1,35 @@
+<section id="signup" layout="row" flex layout-fill>
+    <!--<ng-include src="'/templates/components/_sidenav.html'"></ng-include>-->
+
+    <md-content layout-padding layout-fill layout-align="center center">
+        <div class="form-wrapper" layout="column" layout-fill layout-align="center center">
+            <div class="inner-form">
+                <div class="input-wrapper" layout="column" layout-gt-xs="row">
+                    <md-input-container class="username md-block md-primary">
+                        <label>Username</label>
+                        <input ng-model="model.username">
+                    </md-input-container>
+
+                    <md-input-container class="email md-block md-primary">
+                        <label>Email</label>
+                        <input ng-model="model.email">
+                    </md-input-container>
+
+                    <md-input-container class="password md-block md-primary">
+                        <label>Password</label>
+                        <input ng-model="model.password">
+                    </md-input-container>
+
+                    <md-input-container class="password md-block md-primary">
+                        <label>Confirm password</label>
+                        <input ng-model="model.password">
+                    </md-input-container>
+                </div>
+
+                <div class="button-wrapper" layout="column">
+                    <md-button class="md-block md-raised md-primary" layout-fill>Login</md-button>
+                </div>
+            </div>
+        </div>
+    </md-content>
+</section>
