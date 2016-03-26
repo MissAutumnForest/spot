@@ -1,6 +1,7 @@
 var gulp   = require('gulp'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
+		rename = require('gulp-rename'),
     sass   = require('gulp-sass');
 
 var paths = {
@@ -13,8 +14,9 @@ var paths = {
         'assets/javascripts/controllers/**/*.js',
         'assets/javascripts/directives/**/*.js'
     ],
-    styles: ['assets/styles/**/*.scss', 'assets/styles/**/*.css'],
+    styles: ['assets/styles/**/*.scss'],
     images: ['assets/images/**/*'],
+		fonts: ['assets/fonts/**/*.*'],
     templates: ['assets/templates/**/*'],
     copy: [
       'assets/app.html',
@@ -38,12 +40,18 @@ gulp.task('styles', function () {
                precision: 10,
                onError: console.error.bind(console, 'Sass error:')
              }))
+						 .pipe(rename('app.css'))
              .pipe(gulp.dest('./.tmp/'));
 });
 
 gulp.task('images', function () {
   return gulp.src(paths.images)
              .pipe(gulp.dest('./.tmp/images/'))
+});
+
+gulp.task('fonts', function () {
+	return gulp.src(paths.fonts)
+						 .pipe(gulp.dest('./.tmp/fonts/'))
 });
 
 gulp.task('templates', function () {
@@ -60,9 +68,10 @@ gulp.task('watch', function () {
     gulp.watch(paths.javascripts, ['javascripts']);
     gulp.watch(paths.styles, ['styles']);
     gulp.watch(paths.images, ['images']);
+		gulp.watch(paths.fonts, ['fonts']);
     gulp.watch(paths.templates, ['templates']);
     gulp.watch(paths.copy, ['copy']);
 });
 
-gulp.task('default', ['watch', 'javascripts', 'styles', 'images', 'templates', 'copy']);
+gulp.task('default', ['watch', 'javascripts', 'styles', 'images', 'fonts', 'templates', 'copy']);
 gulp.task('compile', ['javascripts', 'styles', 'images', 'templates', 'copy']);
