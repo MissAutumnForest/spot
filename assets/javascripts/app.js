@@ -25,6 +25,10 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
           templateUrl: "/templates/pages/signup.html",
           controller: "SignUpCtrl"
       })
+      .when('/map', {
+          templateUrl: "/templates/pages/map.html",
+          controller: "MapCtrl"
+      })
       .otherwise({
         redirectTo: '/'
       });
